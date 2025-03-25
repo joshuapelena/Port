@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Landing</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  background-color: #9797c0;
+  color: #0a0808;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #3b3939;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#header-img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #3498db;
+}
+
+main {
+  margin-top: 80px; /* Space for the fixed header */
+  padding: 20px;
+}
+
+#about {
+  margin-top: 100px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#email {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  color: black;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#submit {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #555;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(95, 69, 69, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px rgba(155, 32, 226, 0.2);
+}
+
+ul img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nav-bar {
+    margin-top: 10px;
+  }
+
+  #form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+  </style>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/317145526/original/00c4692496be41ae9777e7bed680df3ccc4ce424/design-modern-fantastic-car-logo.jpg">
+      <nav id="nav-bar">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#video">Video</a>
+        <a class="nav-link" href="#form">SignUp</a>
+      </nav>
+    </header>
+    <section id="about">
+      <h2></h2>
+    <strong>Some of the most famous car brands globally:</strong>
+    <ul>
+        <div class="card"><li><strong>Toyota:</strong> A Japanese manufacturer known for its reliability and fuel efficiency, with a strong presence in the global market.</li>
+        <img src="https://d1hv7ee95zft1i.cloudfront.net/custom/blog-post/original/toyota-supra-manual-64dc4d6ec72b6.jpg"></div>
+        <div class="card"><li><strong>Volkswagen:</strong> A German automaker, known for its diverse lineup of vehicles and its role in the automotive industry.</li>
+        <img src="https://www.goodcarbadcar.net/wp-content/uploads/2021/10/VW-most-iconic-cars-01-1943-VW-Bug.jpg"></div>
+        <div class="card"><li><strong>Honda:</strong> Another Japanese manufacturer, known for its quality and innovation, particularly in the motorcycle and automobile sectors.</li>
+        <img src="https://www.carlogos.org/uploads/2022/greatest-honda-cars-integra-dc2.jpg"></div>
+    </ul>
+    </section>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zm8D_THQ5j0?si=74Dv8i4r4V-FN4et" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>

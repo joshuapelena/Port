@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfolio</title>
+</head>
+<style>
+    body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul li {
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  color: #3498db;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#welcome-section p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+#projects {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.project-tile {
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-tile a {
+  display: block;
+  margin: 10px 0;
+  color: #3498db;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.project-tile a:hover {
+  text-decoration: underline;
+}
+
+#profile-link {
+  display: block;
+  margin: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #welcome-section h1 {
+    font-size: 2.5rem;
+  }
+
+  #welcome-section p {
+    font-size: 1rem;
+  }
+
+  #projects h2 {
+    font-size: 2rem;
+  }
+}
+</style>
+<body>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#welcome-section">Welcome</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="welcome-section">
+    <div class="info">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hi, I'm Joshua! I'm a web developer with a passion for creating beautiful and functional websites.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>These are some of my projects</h2>
+    <div class="project-tile">
+      <a href="Catphotoapp.html" target="_blank">Catphotoapp</a>
+      <a href="catpainting.html" target="_blank">catpainting</a>
+      <a href="CafeMenu.html" target="_blank">CafeMenu</a>
+      <a href="ColoredMarkers.html" target="_blank">ColoredMarkers</a>
+      <a href="Cityskyline.html" target="_blank">Cityskyline</a>
+      <a href="CSSflexbox.html" target="_blank">CSSflexbox</a>
+      <a href="CssPsuedo.html" target="_blank">CssPsuedo</a>
+      <a href="BuildingQuiz.html" target="_blank">BuildingQuiz</a>
+      <a href="Ferriswheel.html" target="_blank">Ferriswheel</a>
+      <a href="landing.html" target="_blank">landing</a>
+      <a href="Magazine.html" target="_blank">Magazine</a>
+      <a href="Penguin.html" target="_blank">Penguin</a>
+      <a href="personalPortfolio.html" target="_blank">personalPortfolio</a>
+      <a href="Piano.html" target="_blank">Piano</a>
+      <a href="Registrationform.html" target="_blank">Registrationform</a>
+      <a href="Rothkopainting.html" target="_blank">Rothkopainting</a>
+      <a href="Surveyform.html" target="_blank">Surveyform</a>
+      <a href="technical.html" target="_blank">technical</a>
+      <a href="tributepage.html" target="_blank">tributepage</a>
+      <a href="typography.html" target="_blank">typography</a>
+    </div>
+  </section>
+
+  <footer>
+    <a id="profile-link" href="" target="_blank">View My Profile</a>
+  </footer>
+</body>
+</html>

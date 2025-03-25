@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  min-height: 2em; /* Ensures all elements have the same minimum height */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff; /* Ensures text is visible against the dark background */
+}
+
+select {
+  background-color: #ffffff; /* Keeps the select element's background white */
+}
+
+.inline {
+  display: inline-block;
+  margin-right: 10px; /* Adjusts the space between the label and the input */
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  min-width: 300px; /* Ensures width is never below 300px */
+  margin: 1em auto; /* Adds 1em margin on the top and bottom, auto margins on the sides to center */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  min-height: 2em; /* Matches the height of other fields */
+  font-size: 1.1rem; /* Increases the font size */
+}
+
+input[type="file"] {
+  padding: 1px 2px; /* Match the padding to ensure consistency */
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  min-height: 2em; /* Ensures all elements have the same minimum height */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff; /* Ensures text is visible against the dark background */
+}
+
+select {
+  background-color: #ffffff; /* Keeps the select element's background white */
+}
+
+.inline {
+  display: inline-block;
+  margin-right: 10px; /* Adjusts the space between the label and the input */
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  min-width: 300px; /* Ensures width is never below 300px */
+  margin: 1em auto; /* Adds 1em margin on the top and bottom, auto margins on the sides to center */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  min-height: 2em; /* Matches the height of other fields */
+  font-size: 1.1rem; /* Increases the font size */
+}
+
+input[type="file"] {
+  padding: 1px 2px; /* Match the padding to ensure consistency */
+}
+
+</style>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out the form below:</p>
+  
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+      
+      <label id="number-label" for="number">Age:</label>
+      <input id="number" type="number" min="1" max="100" placeholder="Enter your age" required>
+    </fieldset>
+    
+    <fieldset>
+      <label for="dropdown">Select your role:</label>
+      <select id="dropdown" required>
+        <option value="">(select one)</option>
+        <option value="student">Student</option>
+        <option value="professional">Professional</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Select your interests:</legend>
+      <label for="coding"><input id="coding" type="checkbox" value="coding" name="interest"> Coding</label>
+      <label for="design"><input id="design" type="checkbox" value="design" name="interest"> Design</label>
+      <label for="marketing"><input id="marketing" type="checkbox" value="marketing" name="interest"> Marketing</label>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Account type (required)</legend>
+      <label for="personal-account"><input id="personal-account" class="inline" type="radio" name="account-type" value="1" checked> Personal</label>
+      <label for="business-account"><input id="business-account"  class="inline" type="radio" value="1" name="account-type"> Business</label>
+    </fieldset>
+    
+    <fieldset>
+      <label for="profile-picture">Upload a profile picture:</label>
+      <input id="profile-picture" type="file">
+      
+      <label for="bio">Provide a bio:</label>
+      <textarea id="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+    </fieldset>
+    
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
